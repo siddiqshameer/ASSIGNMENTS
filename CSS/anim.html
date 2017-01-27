@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>animation</title>
+        <style>
+            div
+            {
+                width: 100px;
+                height: 100px;
+                border-radius: 3px;
+                position: relative;
+                    
+                animation: moving 10s linear infinite;
+                animation-direction: normal;
+                
+            }
+            @keyframes moving 
+            {
+                0%   {background: red; left: 0px; top: 0px;}
+                100% {background: blue; left:92%; ; top: 0px;}
+            }
+        </style>
+    </head>
+    <body>
+        <div id="moving">
+            
+        </div>
+    </body>
+</html>
