@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Employee Login</title>
+        <style>
+            form 
+             {
+                border: 3px solid greenyellow;
+                width: 30%;
+                margin: auto;
+                margin-top: 50px;
+                
+             }   
+           
+           input[type=text], input[type=password] 
+                {
+                    width: 100%;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    display: list-item;
+                    border: 1px solid #ccc;
+                    box-sizing: border-box;
+                } 
+            button 
+                {
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 14px 20px;
+                    margin: 8px 0;
+                    border: none;
+                    cursor: pointer;
+                    width: 100%;
+                }  
+            .imgcontainer 
+                {
+                    text-align: center;
+                    margin: auto;
+                }      
+
+           img.avatar 
+                {
+                    width: 40%;
+                    border-radius: 50%;
+                 }     
+
+        </style> 
+        
+    </head>
+    <body>
+        <form>
+            <div class="imgcontainer">
+                <img src="avatar.jpg" alt="avatar" class="avatar"><br>
+                <span><b><label>Employee Login</label></b></span>
+            </div>
+            <div class="container">
+                <label><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+                
+            </div>
+
+            
+        </form> 
+    </body>
+</html>
