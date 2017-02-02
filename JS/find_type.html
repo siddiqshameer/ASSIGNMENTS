@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>find type</title>
+        <script type="text/javascript">
+            function find_sum()
+            {
+                var fn=parseFloat( prompt("Enter first number",""));
+                var sn= parseFloat(prompt("Enter second number",""));
+                var sum=fn+sn;
+                alert("The sum is  : "+sum);
+                alert("the datatype of first number is : "+typeof(fn));
+                alert("the datatype of second number is : "+typeof(sn));
+                alert("the datatype of sum is : "+typeof(sum));
+                var yourName=prompt("enter your name :-","");        
+                alert("the datatype of your name is : "+typeof(yourName));
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <button onclick="find_sum()">Click here to add two numbers</button>
+        </form>
+    </body>
+</html>
