@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Pending Days</title>
+        <script type="text/javascript">
+        function view()
+        {
+            today=new Date();
+            var endOfYear=new Date(today.getFullYear(), 11, 31);
+            var oneDay=1000*60*60*24;
+            alert("Pending days in this year :"+Math.ceil((endOfYear.getTime()-today.getTime())/(oneDay)));
+        }
+        </script>
+    </head>
+    <body>
+        <button onclick="view()">click here to view pending days in current year</button>
+    </body>
+</html> 
