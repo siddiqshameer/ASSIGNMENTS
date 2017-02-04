@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>countdown</title>
+ 
+        <script type="text/javascript">
+            function run()
+            {
+                        var timeleft = prompt("enter a number","");
+
+                        var downloadTimer = setInterval(function()
+                        {
+                        timeleft--;
+                        document.getElementById("countdowntimer").textContent = timeleft;
+                        if(timeleft <= 0)
+                            clearInterval(downloadTimer);
+                            if (timeleft==0)
+                                {
+                                document.getElementById("countdowntimer").innerHTML="time expired";
+                                }
+                        },1000);
+                    
+
+                
+            }
+        </script>
+    </head>
+    <body>
+        <button type="" onclick="run()">Countdown</button>
+        <span id="countdowntimer" style="font-size: 70;margin-left: 100px;"></span>
+        
+        
+    </body>
+</html>
