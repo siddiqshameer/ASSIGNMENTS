@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title></title>
+        <script type="text/javascript">
+            function find_sum()
+            {
+                var fn=document.getElementById("firstNum").value;
+                var sn=document.getElementById("secondNum").value;
+                var sum=Number(fn)+Number(sn);
+                alert(sum);
+            
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <label> Enter two numbers :</label>
+            <input type="text" id="firstNum" />
+            <input type="text" id="secondNum" />
+            <button onclick="find_sum()">find sum</button>
+        </form>
+    </body>
+</html>
